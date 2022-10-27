@@ -37,7 +37,7 @@ splits = ['test', 'validation', 'train']
 # note that billsum has no validation set
 
 # Percentage of data to load from orignal size 
-load_percent =  100  # int from 0 to 100; 100 means all;0 means none. 
+load_percent =  1  # int from 0 to 100; 100 means all;0 means none. 
 
 # Amoung loaded, usually after scambling, use only 1/num_shards of this dataset.
 # Not to confuse with load_percent.
@@ -85,5 +85,5 @@ sent_end = string.punctuation
 neg_pos_ratio = 5 
 
 # methods used to generate negative samples 
-methods = ["cross", "word_add", "word_delete", "word_replace"] 
+methods = [ "word_delete"] 
 # methods = ["word_add", "word_delete", "word_replace"] 
